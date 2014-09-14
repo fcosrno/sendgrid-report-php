@@ -1,0 +1,6 @@
+index.php
+.DS_Store
+vendor
+notes/
+tests/report
+doc/example_params.json
