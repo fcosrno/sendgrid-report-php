@@ -15,15 +15,15 @@ namespace Fcosrno\SendGridReport;
  * Final URL looks something like this:
  * https://api.sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
  *
- * @method void spamreports(string $string)
- * @method void blocks(string $string)
- * @method void bounces(string $string)
- * @method void invalidemails(string $string)
- * @method void unsubscribes(string $string)
- * @method void get(string $string)
- * @method void delete(string $string)
- * @method void count(string $string)
- * @method void add(string $string)
+ * @method void spamreports()
+ * @method void blocks()
+ * @method void bounces()
+ * @method void invalidemails()
+ * @method void unsubscribes()
+ * @method void get()
+ * @method void delete()
+ * @method void count()
+ * @method void add()
  * @method void date(string $string)
  * @method void days(string $string)
  * @method void limit(string $string)
@@ -96,7 +96,7 @@ class Report {
    * 
    * 
    * @param  string $method Any of the methods in $this->modules
-   * @param  array $args
+   * @param  array|null $args
    * @return this
    */
   public function __call($method, $args=null) {
