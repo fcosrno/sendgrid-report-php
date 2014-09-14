@@ -172,12 +172,12 @@ composer install
 
 Go to the root of the project then run all tests by typing in the terminal:
 ```bash
-phpunit --bootstrap vendor/autoload.php tests/
+phpunit
 ```
 	
 With coverage report:
 ```bash
-phpunit --coverage-html ./tests/report --bootstrap vendor/autoload.php tests/
+phpunit --coverage-html ./tests/report
 ```
 
 

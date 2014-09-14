@@ -1,6 +1,6 @@
 index.php
 .DS_Store
 vendor
-notes/
-tests/report
+notes
+build
 doc/example_params.json
