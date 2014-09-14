@@ -32,5 +32,5 @@ tools:
         enabled: true
         excluded_dirs: [vendor, tests]
 filter:
-	paths: ['src']
+    paths: ['src']
     excluded_paths: [vendor, tests]
