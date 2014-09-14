@@ -174,12 +174,3 @@ Go to the root of the project then run all tests by typing in the terminal:
 ```bash
 phpunit
 ```
-	
-With coverage report:
-```bash
-phpunit --coverage-html ./tests/report
-```
-
-
-
-
