@@ -1,5 +1,39 @@
 <?php
+
+/*
+ * This file is part of the Fcosrno\SendGridReport package.
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
 namespace Fcosrno\SendGridReport;
+
+/**
+ * This class generates the URL to send to SendGrid API
+ *
+ * Final URL looks something like this:
+ * https://api.sendgrid.com/api/spamreports.get.json?api_user=your_sendgrid_username&api_key=your_sendgrid_password&date=1
+ *
+ * @method void spamreports(string $string)
+ * @method void blocks(string $string)
+ * @method void bounces(string $string)
+ * @method void invalidemails(string $string)
+ * @method void unsubscribes(string $string)
+ * @method void get(string $string)
+ * @method void delete(string $string)
+ * @method void count(string $string)
+ * @method void add(string $string)
+ * @method void date(string $string)
+ * @method void days(string $string)
+ * @method void limit(string $string)
+ * @method void offset(string $string)
+ * @method void type(string $string)
+ * @method void email(string $string)
+ * @method void startDate(string $string)
+ * @method void endDate(string $string)
+ * @method void deleteAll(string $string)
+ */
 class Report {
   /**
    * Modules defined in SendGrid Web API
@@ -18,9 +52,11 @@ class Report {
   static $parameters = array('date','days','limit','offset','type','email');
   /**
    * Convert snake_case parameters to PHP-valid camelCase equivalent
+   * Remember that to comply with PSR, methods shouldn't have underscores
+   * 
    * @var array
    */
-  static $parameters_underscored = array('start_date'=>'startDate','end_date'=>'endDate','delete_all'=>'deleteAll'); // to comply with PSR, methods shouldn't have underscores
+  static $parameters_underscored = array('start_date'=>'startDate','end_date'=>'endDate','delete_all'=>'deleteAll');
   /**
    * Other vars
    * @var string
@@ -60,7 +96,7 @@ class Report {
    * 
    * 
    * @param  string $method Any of the methods in $this->modules
-   * @param  string $args
+   * @param  array $args
    * @return this
    */
   public function __call($method, $args=null) {
@@ -90,7 +126,8 @@ class Report {
   }
 
   /**
-   * Converts parameter to snake_case from camelCase. ie, startDate() becomes start_date
+   * Converts parameter to snake_case from camelCase. ie, startDate() becomes start_date.
+   * Why? Because to comply with PSR, methods shouldn't have underscores
    * @param string $method
    */
   private function addUnderscore($method)

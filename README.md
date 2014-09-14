@@ -11,7 +11,7 @@ This library extends the [official sendgrid-php library](https://github.com/send
 
 ```php
 $sendgrid = new Fcosrno\SendGridReport\SendGrid('username', 'password');
-$report = new new Fcosrno\SendGridReport\Report();
+$report = new Fcosrno\SendGridReport\Report();
 $report->spamreports();
 $result = $sendgrid->report($report);
 ```
