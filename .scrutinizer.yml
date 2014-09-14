@@ -19,18 +19,7 @@ tools:
     php_pdepend: true
     php_analyzer: true
     php_code_coverage: false
-    external_code_coverage:
-        timeout: 600
-        runs: 4
-    php_code_sniffer:
-        config:
-            standard: PSR2
-    php_loc:
-        enabled: true
-        excluded_dirs: [vendor, tests]
-    php_cpd:
-        enabled: true
-        excluded_dirs: [vendor, tests]
+    external_code_coverage: true
 filter:
     paths: ['src']
     excluded_paths: [vendor, tests]
