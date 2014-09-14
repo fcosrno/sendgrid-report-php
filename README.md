@@ -1,6 +1,6 @@
 # sendgrid-report-php
 
-[![Build Status](https://travis-ci.org/fcosrno/sendgrid-report-php.svg)](https://travis-ci.org/fcosrno/sendgrid-report-php) [![Latest Stable Version](https://poser.pugx.org/fcosrno/sendgrid-report/v/stable.svg)](https://packagist.org/packages/fcosrno/sendgrid-report)
+[![Build Status](https://travis-ci.org/fcosrno/sendgrid-report-php.svg)](https://travis-ci.org/fcosrno/sendgrid-report-php) [![Latest Stable Version](https://poser.pugx.org/fcosrno/sendgrid-report/v/stable.svg)](https://packagist.org/packages/fcosrno/sendgrid-report) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/fcosrno/sendgrid-report-php/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/fcosrno/sendgrid-report-php/?branch=master) [![Build Status](https://scrutinizer-ci.com/g/fcosrno/sendgrid-report-php/badges/build.png?b=master)](https://scrutinizer-ci.com/g/fcosrno/sendgrid-report-php/build-status/master)
 
 
 PHP wrapper to view and manage SendGrid reports through the Web API.
