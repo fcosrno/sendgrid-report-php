@@ -24,7 +24,7 @@ Add SendGrid Report to your `composer.json` file. If you are not using [Composer
 ```json
 {  
   "require": {
-    "fcosrno/sendgrid-report-php": "1.*"
+    "fcosrno/sendgrid-report": "1.*"
   }
 }
 ```
