@@ -26,7 +26,7 @@ class SendGrid extends \SendGrid{
     $form['api_user'] = $this->api_user; 
     $form['api_key'] = $this->api_key; 
 
-    $response = \Unirest::post($report->getUrl(), array(), $form );
+    $response = $this->postRequest($report->getUrl(), $form);
 
     return $response->body;
   }
