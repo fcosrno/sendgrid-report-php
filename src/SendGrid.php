@@ -23,8 +23,8 @@ class SendGrid extends \SendGrid{
   public function report(Report $report)
   {
     $form = $report->toWebFormat();
-    $form['api_user'] = $this->api_user; 
-    $form['api_key'] = $this->api_key; 
+    $form['api_user'] = $this->apiUser; 
+    $form['api_key'] = $this->apiKey; 
 
     $response = $this->postRequest($report->getUrl(), $form);
 
