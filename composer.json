@@ -6,7 +6,7 @@
   "keywords": ["SendGrid","sendgrid","Reports", "Spam","Bounces","Blocks","Invalid Emails","Unsubscribes"],
   "require": {
     "php": ">=5.3",
-    "sendgrid/sendgrid":"2.*"
+    "sendgrid/sendgrid":"4.*"
   },
   "require-dev": {
     "phpunit/phpunit": "4.1.*",
