@@ -35,6 +35,13 @@ Then at the top of your PHP script require the autoloader:
 require 'vendor/autoload.php';
 ```
 
+If you do not wish to use Composer, you can [download the latest release](https://github.com/fcosrno/sendgrid-report-php/archive/master.zip). Then include the two library files in the src folder.
+
+```php
+require_once('/path/to/SendGrid.php');
+require_once('/path/to/Report.php');
+```
+
 ## Example App
 
 There is an example in `doc/example.php` to help jumpstart your development.
